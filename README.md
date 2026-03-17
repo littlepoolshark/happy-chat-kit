@@ -1,6 +1,6 @@
 # HappyChatKit
 
-[![CI](https://github.com/your-org/happy-chat-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/your-org/happy-chat-kit/actions/workflows/ci.yml)
+[![CI](https://github.com/littlepoolshark/happy-chat-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/littlepoolshark/happy-chat-kit/actions/workflows/ci.yml)
 [![npm version](https://badge.fury.io/js/happy-chat-kit.svg)](https://www.npmjs.com/package/happy-chat-kit)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 

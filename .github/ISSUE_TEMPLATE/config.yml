@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: Ask a question
-    url: https://github.com/your-org/happy-chat-kit/discussions
+    url: https://github.com/littlepoolshark/happy-chat-kit/discussions
     about: Ask questions and discuss with other community members
   - name: Read the documentation
-    url: https://github.com/your-org/happy-chat-kit/tree/main/docs
+    url: https://github.com/littlepoolshark/happy-chat-kit/tree/main/docs
     about: Check out our documentation for answers to common questions

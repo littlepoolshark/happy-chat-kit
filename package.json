@@ -6,12 +6,12 @@
   "author": "HappyChatKit Contributors",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-org/happy-chat-kit.git"
+    "url": "https://github.com/littlepoolshark/happy-chat-kit.git"
   },
   "bugs": {
-    "url": "https://github.com/your-org/happy-chat-kit/issues"
+    "url": "https://github.com/littlepoolshark/happy-chat-kit/issues"
   },
-  "homepage": "https://github.com/your-org/happy-chat-kit#readme",
+  "homepage": "https://github.com/littlepoolshark/happy-chat-kit#readme",
   "keywords": [
     "react",
     "chat",
