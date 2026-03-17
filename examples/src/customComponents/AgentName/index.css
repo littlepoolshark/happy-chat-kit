@@ -1,0 +1,29 @@
+.agent-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin: 6px 0;
+}
+
+.agent-name .agent-tip {
+  padding: 6px 12px;
+  border-radius: 25px;
+  border: 1px solid #edf2f1;
+  line-height: normal;
+}
+
+.agent-name .agent-tip .title {
+  color: #006d62;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.agent-name.agent-name-hover:hover .agent-tip {
+  background: #edf2f1;
+  border: 1px solid transparent;
+}
+
+.agent-name .agent-name-colon {
+  margin-right: 8px;
+}

@@ -1,0 +1,40 @@
+import { defineConfig } from 'tsup';
+
+export default defineConfig([
+  {
+    name: 'core',
+    entry: { 'index': 'src/index.ts' },
+    format: ['cjs', 'esm'],
+    dts: true,
+    outDir: 'dist/core',
+    sourcemap: true,
+    clean: false,
+    external: ['react', 'react-dom', 'antd', '@ant-design/icons', '@ant-design/x'],
+  },
+  {
+    name: 'preset',
+    entry: { 'index': 'src/preset.ts' },
+    format: ['cjs', 'esm'],
+    dts: true,
+    outDir: 'dist/preset',
+    sourcemap: true,
+    clean: false,
+    external: [
+      'react',
+      'react-dom',
+      'antd',
+      '@ant-design/icons',
+      '@ant-design/x',
+      'react-markdown',
+      'katex',
+      'rehype-raw',
+      'rehype-katex',
+      'remark-gfm',
+      'remark-math',
+      'remark-breaks',
+      'remark-directive',
+      'remark-directive-rehype',
+      'mdast-util-directive',
+    ],
+  },
+]);
