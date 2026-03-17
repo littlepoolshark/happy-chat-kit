@@ -1,21 +1,47 @@
 # HappyChatKit
 
+[![CI](https://github.com/your-org/happy-chat-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/your-org/happy-chat-kit/actions/workflows/ci.yml)
+[![npm version](https://badge.fury.io/js/happy-chat-kit.svg)](https://www.npmjs.com/package/happy-chat-kit)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Extensible SSE (Server-Sent Events) chat rendering framework for React. Use **core** to build your own protocol and renderer, or use **preset** for a ready-made chat UI.
 
-## Two entry points
+## Features
 
-- **`happy-chat-kit`** — Core only: types, `ChatKit`, `HappyChatProvider`, `useHappyChatCore`, utils. Implement your own protocol and renderer (see `src/protocol` and `src/renderer` in this repo).
-- **`happy-chat-kit/preset`** — Core + default protocol + default renderer: `HappyChatProvider`, `useHappyChat`, `HappyChatMessageFlow`, `MarkdownRenderer`. Uses [@ant-design/x](https://www.npmjs.com/package/@ant-design/x), antd, and react-markdown.
+- **Layered Architecture**: core / protocol / renderer separation for maximum flexibility
+- **Plugin-style**: UIManager for SSE event handling; remark-directive for custom components in markdown
+- **Preset UI**: Optional default UI with Ant Design X integration for fast setup
+- **TypeScript**: Full TypeScript support with strict mode
+- **Streaming**: Built-in support for SSE streaming responses
+- **Extensible**: Easy to extend with custom protocols and renderers
 
-## Install
+## Two Entry Points
+
+| Entry | Description |
+|-------|-------------|
+| `happy-chat-kit` | Core only: types, `ChatKit`, `HappyChatProvider`, `useHappyChatCore`, utils. Implement your own protocol and renderer. |
+| `happy-chat-kit/preset` | Core + default protocol + default renderer: `HappyChatProvider`, `useHappyChat`, `HappyChatMessageFlow`, `MarkdownRenderer`. Uses [@ant-design/x](https://www.npmjs.com/package/@ant-design/x), antd, and react-markdown. |
+
+## Installation
 
 ```bash
+# Using pnpm (recommended)
 pnpm add happy-chat-kit
-# When using preset, also install:
+
+# Using npm
+npm install happy-chat-kit
+
+# Using yarn
+yarn add happy-chat-kit
+```
+
+When using the preset, also install peer dependencies:
+
+```bash
 pnpm add antd @ant-design/icons @ant-design/x react-markdown
 ```
 
-## Quick start (preset)
+## Quick Start (Preset)
 
 ```tsx
 import { HappyChatProvider, useHappyChat, HappyChatMessageFlow } from 'happy-chat-kit/preset';
@@ -42,33 +68,41 @@ function ChatPage() {
 }
 ```
 
-## Quick start (core only)
+## Quick Start (Core Only)
 
 ```ts
 import { ChatKit, useHappyChatCore, HappyMessage } from 'happy-chat-kit';
+
 // Implement your own Provider, SSE handling, and message flow UI.
 // See src/protocol and src/renderer in this repo for reference.
 ```
-
-## Features
-
-- **Layered**: core / protocol / renderer separation.
-- **Plugin-style**: UIManager for SSE event handling; remark-directive for custom components in markdown.
-- **Preset**: Optional default UI and protocol for fast integration.
 
 ## Examples
 
 Clone this repo and run the example app:
 
 ```bash
+pnpm install
 cd examples && pnpm install && pnpm dev
 ```
 
-## Docs
+## Documentation
 
-- [Architecture overview](docs/architecture-overview-v2.md)
-- [Features](docs/features.md)
+- [Architecture Overview](docs/architecture-overview-v2.md) - Understanding the core concepts
+- [Architecture Deep Dive](docs/architecture-deep-dive.md) - Detailed technical documentation
+- [Features](docs/features.md) - Feature descriptions and usage
+
+## Browser Support
+
+- Chrome >= 90
+- Firefox >= 88
+- Safari >= 14
+- Edge >= 90
+
+## Contributing
+
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
 
 ## License
 
-MIT
+MIT © [HappyChatKit Contributors](LICENSE)

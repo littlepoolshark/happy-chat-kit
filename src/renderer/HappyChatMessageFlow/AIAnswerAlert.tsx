@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from '@emotion/styled';
+import React from "react";
+import styled from "@emotion/styled";
 
 const Wrapper = styled.div`
   display: flex;
@@ -9,15 +9,24 @@ const Wrapper = styled.div`
   font-size: 12px;
   font-weight: 400;
   line-height: 20px;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.45);
 `;
 
 interface AIAnswerAlertProps {
   title: React.ReactNode;
-  type: 'error' | 'success' | 'info';
+  type: "error" | "success" | "info";
 }
 
 const InfoIcon = () => (
-  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+  <svg
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+  >
     <circle cx="12" cy="12" r="10" />
     <path d="M12 16v-4M12 8h.01" />
   </svg>
